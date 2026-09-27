@@ -8,7 +8,6 @@ class Solution {
             {
                 count++;
                 maxcount=Math.max(count,maxcount);
-                
             }
             else
             {
@@ -16,6 +15,5 @@ class Solution {
             }
         }
         return maxcount;
-        
     }
 }
