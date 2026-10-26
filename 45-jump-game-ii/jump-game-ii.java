@@ -3,7 +3,7 @@ class Solution {
         int totaljump=0;
         int coverage =0;
         int destination = nums.length-1;
-        int lastjumpidx=0;
+        int lastjumpidnx=0;
 
         if(nums.length==1)
         return 0;
@@ -11,9 +11,9 @@ class Solution {
         for(int i=0;i<nums.length;i++)
         {
             coverage=Math.max(coverage,i+nums[i]);
-            if(i==lastjumpidx)
+            if(i==lastjumpidnx)
             {
-                lastjumpidx=coverage;
+                lastjumpidnx=coverage;
                 totaljump++;
 
                 if(coverage>=destination)
